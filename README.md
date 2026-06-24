@@ -4,8 +4,8 @@
 - Purpose: show how to keep Unity scene wiring in a MonoBehaviour while moving gameplay logic into a plain C# class.
 - Main idea: pass only the Transform dependency into the logic class.
 - Audience: beginners learning how Unity scripts and regular C# classes work together.
-- Series context: this is Project 1 in a four-repository Unity learning series.
-- Teaching use: designed as a teaching tool for Robot 6 lessons.
+- Series context: this is Project 1 in a three-repository Unity learning series.
+- Teaching use: designed as a teaching tool for the Unity Joystick Robot Simulation lessons.
 
 ## What You Get
 - A simple movement example split into two scripts.
@@ -23,15 +23,14 @@
 
 ## Project Notes
 ### Series context
-This repository is the first Unity project in a sequence of four related repos. The set is used to teach Robot 6 concepts step by step, starting with core scripting patterns before moving to more advanced behaviors.
+This repository is the first Unity project in a sequence of three. The set is used to teach robot simulation concepts step by step, starting with core scripting patterns before moving to more advanced behaviors. The third project in the series — Unity Joystick Robot Simulation — is available for purchase on the Unity Asset Store. Purchasing it directly supports the ongoing open-source work at MageMCU and [Carpenter Software](https://carpentersoftware.com).
 
 ### Where this tip is currently applied
 Current status across the Unity repos in this teaching series:
 
 - GameObject-Actions-by-a-Non-Monobehaviour-Class: uses this tip.
-- Robot-6: uses this tip.
 - Unity-Camera-Overlay: does not currently use this tip.
-- Unity-Joystick-GUI: does not currently use this tip.
+- Unity Joystick Robot Simulation *(Unity Asset Store — coming soon)*: uses this tip.
 
 This list helps first-time learners see which projects already use the MonoBehaviour + non-MonoBehaviour split pattern and which projects still use Unity-facing scripts only.
 
@@ -57,11 +56,12 @@ Keep Unity-facing responsibilities in MonoBehaviour (input, scene refs, lifecycl
 - ref: reference-only files moved from the root.
 
 ## Release Notes
+- Updated series context from four repositories to three following the release of Unity Joystick Robot Simulation on the Unity Asset Store.
 - Added Source/Examples folder with runnable split-logic example.
 - Updated README with first-time Unity beginner guidance.
 
 ## Updates
-- June 2026: repository structure simplified and examples added.
+- June 2026: repository structure simplified, examples added, and series references updated.
 
 ## In Progress
 - Add interface-based variant (for example, IMovable) to show stronger decoupling.
